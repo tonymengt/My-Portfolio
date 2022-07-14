@@ -48,10 +48,10 @@ header nav {
 
 header nav ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 header nav ul li a {
@@ -68,6 +68,23 @@ header nav ul li a:hover {
     -webkit-text-stroke: 1px rgb(32, 200, 218);
 }
 /*header style end*/
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+
+  #someimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 400px;
+  }
+
+
+
 
 /*about me style beg*/
 .intro .myinfo{
@@ -115,16 +132,27 @@ header nav ul li a:hover {
 }
 .sample-applications h2 {
     font-size: 36px;
-    /*border-bottom: 3px solid rgb(235, 235, 66);*/
-    width: 100%;
-    /*text-align: center;*/
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(255,255,255);
+    border-radius: 5px;
+
 }
 
-.sample {
-    width: 40%;
+/*.sample-applications section {
+    width: 80%;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+}*/
+
+.sample {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sample .shade {
@@ -134,15 +162,25 @@ header nav ul li a:hover {
 }
     
 .sample img{
-    display: block;
+
     border: 3px solid rgb(255,255,255);
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 404px;
+    margin: 2px;
 }
+/*
+.sample .shader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: rgb(0,0,0,0)
+} */
 .sample span {
     display: none;
 }
-
 .sample .shade:hover span {
     color: rgb(33, 176, 166);
     font-weight: bold;
@@ -155,12 +193,16 @@ header nav ul li a:hover {
     left: 3px;
     padding: 40px;
 }
+/*
+.sample .shade:hover .shader {
+    display: none;
+}*/
 
 .remain-sample {
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .remain-sample .remain-shade {
@@ -172,8 +214,9 @@ header nav ul li a:hover {
 .remain-sample img {
     display: block;
     border: 3px solid rgb(255,255,255);
-    width: 300px;
+    width: auto;
     height: 200px;
+    margin: 2px;
 }
 
 .remain-sample span {
@@ -192,18 +235,65 @@ header nav ul li a:hover {
     left: 3px;
     padding: 15px;
 }
+/* portfolio styling end*/
 
-/*.application h3 {
+/* contact me styling start*/
+.connect-with-me {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    margin: 0 auto;
     justify-content: space-between;
-    padding: 2px;
-    background-color: rgb(255,255,255);
-}*/
+    align-items: center;
+    width: 80%;
+}
 
-/*#horiseon-img{
-    width: 300px;
-    height: 200px;
+#contact {
+    margin-right: 20px;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid rgb(255,255,255);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.connect-with-me ul {
+    padding-top: 20px;
     display: flex;
-}*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.connect-with-me ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.55vw;
+    padding: 10px 15px;
+}
+
+.connect-with-me ul li a:hover {
+    border-radius: 40px;
+    background-color: rgb(255,255,255);
+    color: rgb(33, 176, 166);
+    -webkit-text-stroke: 1px rgb(32, 200, 218);
+}
+/* contact me styling end */
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer h2 {
+    border: 2px solid rgb(255,255,255);
+    padding: 3px 6px;
+    border-radius: 10px;
+    color: rgb(255,255,255);
+    font-size: 10px;
+}
