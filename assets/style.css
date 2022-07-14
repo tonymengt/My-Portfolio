@@ -127,11 +127,33 @@ header nav ul li a:hover {
     justify-content: flex-end;
 }
 
+.sample .shade {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+    
 .sample img{
+    display: block;
     border: 3px solid rgb(255,255,255);
     width: 600px;
     height: 400px;
+}
+.sample span {
+    display: none;
+}
 
+.sample .shade:hover span {
+    color: rgb(33, 176, 166);
+    font-weight: bold;
+    font-size: 25px;
+    background-color:rgba(255,255,255,1) ;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    padding: 40px;
 }
 
 .remain-sample {
@@ -141,14 +163,35 @@ header nav ul li a:hover {
     justify-content: flex-start;
 }
 
+.remain-sample .remain-shade {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
 .remain-sample img {
+    display: block;
     border: 3px solid rgb(255,255,255);
     width: 300px;
     height: 200px;
-
 }
 
+.remain-sample span {
+    display: none;
+}
 
+.remain-sample .remain-shade:hover span {
+    color: rgb(33, 176, 166);
+    font-weight: bold;
+    font-size: 20px;
+    background-color:rgba(255,255,255,1) ;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    padding: 15px;
+}
 
 /*.application h3 {
     display: flex;
