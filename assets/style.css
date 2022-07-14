@@ -137,15 +137,11 @@ header nav ul li a:hover {
     padding-bottom: 10px;
     border-bottom: 5px solid rgb(255,255,255);
     border-radius: 5px;
-
 }
 
-/*.sample-applications section {
-    width: 80%;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}*/
+.sample-applications section {
+    width: 70%;
+}
 
 .sample {
     padding-top: 20px;
@@ -164,7 +160,8 @@ header nav ul li a:hover {
 .sample img{
 
     border: 3px solid rgb(255,255,255);
-    width: 100%;
+    width: 56.5vw;
+    max-width: 100%;
     height: 404px;
     margin: 2px;
 }
@@ -212,9 +209,10 @@ header nav ul li a:hover {
 }
 
 .remain-sample img {
-    display: block;
+
     border: 3px solid rgb(255,255,255);
-    width: auto;
+    width: 28vw;
+    max-width: 100%;
     height: 200px;
     margin: 2px;
 }
@@ -296,4 +294,78 @@ footer h2 {
     border-radius: 10px;
     color: rgb(255,255,255);
     font-size: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+
+    .sample img {
+        flex: 1;
+    }
+    .remain-sample img {
+        flex: 2.3 120%
+    }
+
+    .connect-with-me ul li a{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .sample-applications section {
+        width: 90%;
+    }
+
+    .sample img {
+        flex: 1.2 120%;
+        height: 45vh;
+    }
+    .remain-sample img {
+        width: 100%;
+    }
+
+    .connect-with-me ul li a{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .sample-applications section {
+        width: 90%;
+    }
+
+    .sample img {
+        width: 100%;
+    }
+    .remain-sample img {
+        width: 100%;
+    }
+
+    .connect-with-me ul li a{
+        font-size: 20px;
+    }
+
 }
