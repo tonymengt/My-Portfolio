@@ -140,7 +140,7 @@ header nav ul li a:hover {
 }
 
 .sample-applications section {
-    width: 70%;
+    width: 58%;
 }
 
 .sample {
@@ -148,7 +148,7 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .sample .shade {
@@ -186,7 +186,7 @@ header nav ul li a:hover {
     z-index: 1;
     display: block;
     position: absolute;
-    bottom: 3px;
+    bottom: 6px;
     left: 3px;
     padding: 40px;
 }
@@ -199,7 +199,7 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .remain-sample .remain-shade {
@@ -229,7 +229,7 @@ header nav ul li a:hover {
     z-index: 1;
     display: block;
     position: absolute;
-    bottom: 3px;
+    bottom: 6px;
     left: 3px;
     padding: 15px;
 }
@@ -318,12 +318,16 @@ footer h2 {
         font-size: 20px;
     }
 
+    .sample-applications section {
+        width:90%;
+    }
 
     .sample img {
-        flex: 1;
+        width: 100%;
     }
     .remain-sample img {
-        flex: 2.3 120%
+        width: 43vw;
+        flex: 1 2 100%;
     }
 
     .connect-with-me ul li a{
@@ -337,12 +341,15 @@ footer h2 {
         width: 90%;
     }
 
+    .sample {
+        width: 100%;
+    }
     .sample img {
-        flex: 1.2 120%;
-        height: 45vh;
+        width: 100%;
     }
     .remain-sample img {
-        width: 100%;
+     flex: 1 200%;
+
     }
 
     .connect-with-me ul li a{
@@ -353,6 +360,9 @@ footer h2 {
 
 @media screen and (max-width: 575px) {
 
+    .intro .bio {
+        flex: 1;
+    }
     .sample-applications section {
         width: 90%;
     }
